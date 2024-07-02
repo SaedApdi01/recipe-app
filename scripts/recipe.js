@@ -9,12 +9,12 @@ function getRecipeID(id) {
 
 const recipeId = getRecipeID('recipeId');
 const readingRecipe = recipes.filter(recipe => recipe.recipeID.toString() === recipeId);
-
 // Function to generate the HTML for the selected recipe
 function generateRecipe() {
     let recipeHTML = '';
     if (readingRecipe) {
         readingRecipe.forEach(recipe => {
+            document.title = recipe.recipeTItle; 
             recipeHTML += `
                 <div class="recipe-img">
                     <img src="${recipe.recipeImage}" alt="" width="300px" />
