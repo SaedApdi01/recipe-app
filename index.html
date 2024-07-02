@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-J0mP6G6srqEWVRgXFm0ao3pok7fF6xl+d0BeKzVvuvEwind++1mPk6UpXsBo+7km" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Somali Recipes</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <div class="navbar-info">
+        <input class="search-input" type="text" placeholder="Search Recipe" />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="favorite-btn"></button>
+      </div>
+    </section>
+
+    <!-- Modal for displaying messages -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="modal-message"></p> <!-- Corrected "messege" to "message" -->
+      </div>
+    </div>
+
+    <section class="header">
+      <div class="header-info">
+        <h2>Welcome to Somali Recipes</h2>
+        <p>
+          Kusoodhawoow Somali recipes oo baro xirfada cuntada samaysona cunto
+          dhandhan leh🍝
+          <!-- Welcome to Somali recipes where you can learn cooking skills and make delicious food -->
+        </p>
+      </div>
+    </section>
+
+    <section class="recipes-container">
+      <h1>All Recipes😋</h1>
+      <div class="recipes">
+        <!-- I used JavaScript to populate this section -->
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-info">
+        <p>© 2024 SomaliRecipes. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+
+  <script type="module" src="scripts/app.js"></script>
+  <script type="module" src="scripts/index.js"></script>
+</html>

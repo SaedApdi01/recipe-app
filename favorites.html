@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/recipe.css" />
+    <link rel="stylesheet" href="styles/favorites.css" />
+    <title>Somali Recipes</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <div class="navbar-info">
+        <button class="back-btn">
+          <a class="bg-a" href="index.html"><i class="fas fa-home"></i></a>
+        </button>
+      </div>
+    </section>
+
+    <section class="favorite-container">
+      <h2>Your Favorite Recipes🍝🍽️</h2>
+      
+      <!-- Modal for displaying messages -->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="modal-message"></p> <!-- Corrected "messege" to "message" -->
+        </div>
+      </div>
+
+      <div class="favorite">
+        <!-- I used JavaScript to populate this section -->
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-info">
+        <p>© 2024 SomaliRecipes. All rights reserved.</p>
+      </div>
+    </section>
+
+    <script type="module" src="scripts/favorites.js"></script>
+  </body>
+</html>
